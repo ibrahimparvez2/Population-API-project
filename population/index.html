@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Population Example</title>
+
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<header id="showcase">
+		<h1>World Population Statistics</h1>
+		<p id="intro">Please enter your country of birth, date of birth and gender.</p>
+		<div id="menu">
+			<div id="choosec"><select name="Country List" id="countryList"></select>
+			</div>
+			<div id="enterDOB">
+                <div id="dobError"></div>
+				<input type="text" id="dob" placeholder="YYYY-MM-DD" />
+			</div>
+            
+			<form name="gf1" id="gender">
+                <div id="radio_error"></div>
+				<input name="gender" type="radio" value="male">Male
+				<input name="gender" type="radio" value="female">Female		
+			</form>
+			<button type="button" id="modalBtn" class="button">Get Population Stats</button>
+		</div>
+	</header>
+
+
+	<div id="simpleModal" class="modal">
+		<div class="modal-content">
+			<div class="modal-header">
+				 <span class="closeBtn">&times;</span>
+				<h2> Result </h2>
+			</div>
+			<div class="modal-body">
+				<p id="result"></p>
+				<p id="result1"></p>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<script src="myScript.js"></script>
+</body>
+
+</html>
